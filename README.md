@@ -56,4 +56,26 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Using Server-Side Rendering (SSR)
+
+To utilize server-side rendering (SSR) for your application, you can use the commands defined in the `package.json` file. Below are the steps:
+
+### Start SSR with Watch Mode
+To start the SSR server in watch mode, run:
+```bash
+npm run watch
+```
+
+### Start SSR with PM2
+To start the SSR server using PM2, run:
+```bash
+npm run pm2:start
+```
+
+### View PM2 Logs
+To view the logs for the SSR server managed by PM2, run:
+```bash
+npm run pm2:logs
+```
+
+These commands ensure efficient management and monitoring of your SSR application.
