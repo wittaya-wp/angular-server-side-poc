@@ -7,7 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:app-server-side": "node dist/app-server-side/server/server.mjs"
+    "serve:ssr": "node dist/app-server-side/server/server.mjs",
+    "pm2:start": "pm2 start pm2-dev.json --env development",
+    "pm2:restart": "pm2 restart angular-ssr-app",
+    "pm2:logs": "pm2 logs angular-ssr-app",
+    "pm2:stop": "pm2 stop angular-ssr-app"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +25,7 @@
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.15",
     "express": "^4.18.2",
+    "pm2": "^6.0.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
